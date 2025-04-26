@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Botanical Garden - Home</title>
+    <style>
+        /* Reset default margin and padding */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 5px;
+            background-color: #f2f2f2;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .intro {
+            margin-bottom: 30px;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .plants-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .plant {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .plant:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            display: none;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 2px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0%;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Technical Botanical Garden</h1>
+        <nav>
+            <ul>
+                <li><a href="entry.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome to Our Botanical Garden</h2>
+            <p>Explore the fascinating world of plants and nature in our Technical Botanical Garden. We offer a diverse collection of plant species from around our garden.</p>
+        </div>
+
+        <h2>Featured Plants</h2>
+        <div class="plants-container">
+            <!-- Plant elements here -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Jatropha.jpg" alt="Jatropha">
+                <h2>Jatropha</h2>
+                <div class="description">
+                    <p>Jatropha is a genus of flowering plants in the spurge family, Euphorbiaceae. The name is derived from the Greek words ἰατρός (iatros), meaning "physician", and τροφή (trophe), meaning "nutrition", hence the common name physic nut.</p>
+                </div>
+            </div>
+             <!-- Plant 2 -->
+             <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Bougainvillea.jpg" alt="Bougainvillea">
+                <h2>Bougainvillea</h2>
+                <div class="description">
+                <p>Bougainvillea is a genus of thorny, woody, evergreen vines, bushes, and trees that are native to Brazil, Peru, and Argentina.</p>
+            </div>
+            </div>
+            <!-- Plant 3 -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\impatiens.jpg" alt="impatiens">
+                <h2>impatiens</h2>
+                <div class="description">
+                <p>Impatiens is a genus of over 1,000 flowering plants that are native to the Northern Hemisphere and tropics.</p>
+            </div>
+        </div>
+            <!-- Plant 4 -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Black Berry Lilly.jpg" alt="Black Berry Lilly">
+                <h2>Black Berry Lilly</h2>
+                <div class="description">
+                <p>The blackberry lily (Iris domestica) is a perennial plant with iris-like leaves and flowers that resemble lilies.</p>
+            </div>
+            </div>
+            <!-- Plant 5 -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\home2.jpg" alt="home2">
+                <h2>Elephant Creeper</h2>
+                <div class="description">
+                <p>Elephant creeper, or Argyreia nervosa, is a perennial climbing vine that's native to the Indian subcontinent. It's been introduced to many areas around the world, including Africa.</p>
+            </div>
+            </div>
+            <!-- Plant 6 -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Chloris.jpg" alt="Chloris">
+                <h2>Chloris</h2>
+                <div class="description">
+                <p>Chloris is a genus of grasses in the family Poaceae, also known as finger grass or windmill grass.</p>
+            </div>
+            </div>
+            <!-- Plant 7 -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Gomphrena.jpg" alt="Gomphrena">
+                <h2>Gomphrena</h2>
+                <div class="description">
+                <p>Gomphrena, also known as globe amaranth, is a genus of flowering annual plants in the Amaranthaceae family. The genus includes 139 species that are native to the Americas.</p>
+            </div>
+        </div>
+            <!-- Plant 8 -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Jungle geranium.jpg" alt="Jungle geranium">
+                <h2>Jungle geranium</h2>
+                <div class="description">
+                <p>Jungle geranium, also known as Ixora coccinea, is a flowering shrub native to Southern India, Bangladesh, and Sri Lanka.</p>
+            </div>
+        </div>
+            <!-- Plant 9 -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Clover.jpg" alt="Clover">
+                <h2>Clover</h2>
+                <div class="description">
+                <p>Clover, also known as trefoil, is a flowering plant in the legume family Fabaceae and the genus Trifolium.</p>
+            </div>
+        </div>
+            <!-- Plant 10 -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Oliver Tomato.jpg" alt="Oliver Tomato">
+                <h2>Oliver Tomato</h2>
+                <div class="description">
+                <p>Jamie Oliver recommends sowing tomato seeds from March to May, and keeping them in a warm place like a sunny windowsill or heated propagator..</p>
+            </div>
+        </div>
+            <!-- Plant 11 -->
+            <div class="plant" onclick="toggleInfo(this)">
+                <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Shoeblackplant.jpg" alt="Shoeblackplant">
+                <h2>Shoeblackplant</h2>
+                <div class="description">
+                <p>The shoeblack plant, also known as Hibiscus rosa-sinensis, is a tropical hibiscus flower that is native to Vanuatu.</p>
+            </div>
+        </div>
+        <div class="plant" onclick="toggleInfo(this)">
+            <img src="C:\Users\chand\Downloads\assignment-20240514T132819Z-001\assignment\images\Rose.jpg" alt="Rose">
+            <h2>Rose</h2>
+            <div class="description">
+            <p>A rose is a flowering plant in the genus Rosa and the Rosaceae family. Roses are known for their beautiful flowers, which can be white, yellow, pink, crimson, or maroon.</p>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Technical Botanical Garden</p>
+    </footer>
+
+    <script>
+        function toggleInfo(element) {
+            // Toggle description visibility
+            const description = element.querySelector('.description');
+            if (description.style.display === 'none' || description.style.display === '') {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

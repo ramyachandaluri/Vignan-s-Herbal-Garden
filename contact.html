@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Technical Botanical Garden</title>
+    <style>
+        /* Reset default margin and padding */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 5px;
+            background-color: #f2f2f2;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto 0;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            background-color: #f2f2f2;
+        }
+
+        .social-links a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Technical Botanical Garden</h1>
+        <nav>
+            <ul>
+                <li><a href="entry.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to get in touch? Fill out the form below:</p>
+
+        <form id="contactForm" action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="button" onclick="submitForm()">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/the__pa1?igsh=eWcycDNkdTlsbmg2" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/technicalbotanicalgarden" target="_blank">Facebook</a>
+        </div>
+
+        <h3>Contact Section Heads</h3>
+        <p>For specific inquiries, you can contact our section heads:</p>
+        <ul>
+            <li>Plant Research: Dr. Jane Doe - <strong>7894561355</strong></li>
+            <li>Garden Maintenance: Mr. John Smith - <strong>9645896231</strong></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Technical Botanical Garden</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            // You can add form validation here if needed
+            // For demonstration, we'll simply show an alert on button click
+            alert('Your message has been sent! Thank you.');
+            // Optionally, you can reset the form fields after submission
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+
+</body>
+
+</html>
+

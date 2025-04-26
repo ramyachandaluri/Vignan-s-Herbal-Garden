@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body {
+            background-image: url('https://t4.ftcdn.net/jpg/05/96/53/35/360_F_596533582_UgVp2PyEDGWBx71tKyFm9jvYRnSvVerZ.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            width: 300px;
+            margin: 100px 0 140px 600px; /* Adjust left margin */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login Form</h1>
+        <form onsubmit="return redirectToPage()">
+            <label>USER NAME</label>
+            <input type="text" name="uname" required><br>
+            <label>PASSWORD</label>
+            <input type="password" name="pass" required><br><br>
+            <input type="submit" value="LOGIN">
+        </form>
+    
+    </div>
+
+    <script>
+        function redirectToPage() {
+            // Redirect to bot.html upon form submission
+            window.location.href = "bot.html";
+            return false; // Prevent form from submitting normally
+        }
+    </script>
+</body>
+</html>
